@@ -8,10 +8,17 @@
             android:id="@+id/nav_home"
              android:title="الرئيسية" />
         <item
+            android:id="@+id/nav_tips"
+            android:title="الارشادات" />
+        <item
             android:id="@+id/nav_gallery"
              android:title="ماذا عنا" />
-        <item
+
+
+           <item
             android:id="@+id/nav_slideshow"
              android:title="تواصل معانا" />
+
+
     </group>
 </menu>

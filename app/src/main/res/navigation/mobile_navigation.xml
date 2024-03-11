@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.creativeband.ui.gallery.GalleryFragment"
+        android:name="com.example.creativeband.ui.about.GalleryFragment"
         android:label="ماذا عنا"
         tools:layout="@layout/fragment_gallery" />
 
@@ -31,4 +31,34 @@
         android:name="com.example.creativeband.ui.therd.AutismComponentFragment"
         android:label="العاب التوحد"
         tools:layout="@layout/fragment_autism_component" />
+    <fragment
+        android:id="@+id/tips"
+        android:name="com.example.creativeband.ui.Tips.TipsADHDFragment"
+        android:label="فرط الحركة"
+        tools:layout="@layout/fragment_tips" />
+    <fragment
+        android:id="@+id/nav_tips"
+        android:name="com.example.creativeband.ui.Tips.AllTipsFragment"
+        android:label="الارشادات"
+        tools:layout="@layout/fragment_all_tips" >
+        <action
+            android:id="@+id/action_nav_tips_to_tips"
+            app:destination="@id/tips" />
+        <action
+            android:id="@+id/action_nav_tips_to_tipsAutismFragment"
+            app:destination="@id/tipsAutismFragment" />
+        <action
+            android:id="@+id/action_nav_tips_to_tipsLearningFragment"
+            app:destination="@id/tipsLearningFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tipsAutismFragment"
+        android:name="com.example.creativeband.ui.Tips.TipsAutismFragment"
+        android:label="التوحد"
+        tools:layout="@layout/fragment_tips_autism" />
+    <fragment
+        android:id="@+id/tipsLearningFragment"
+        android:name="com.example.creativeband.ui.Tips.TipsLearningFragment"
+        android:label="صعوبات التعلم"
+        tools:layout="@layout/fragment_tips_learning" />
 </navigation>
