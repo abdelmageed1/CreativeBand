@@ -40,6 +40,17 @@ class HomeFragment : Fragment() {
         findNavController().navigate( R.id.action_nav_home_to_autismComponentFragment)
     }
 
+        binding.btn2.setOnClickListener {
+        findNavController().navigate( R.id.action_nav_home_to_ADHDComponentFragment)
+    }
+
+
+        binding.btn3.setOnClickListener {
+        findNavController().navigate( R.id.action_nav_home_to_learningFragment)
+    }
+
+
+
     }
 
 

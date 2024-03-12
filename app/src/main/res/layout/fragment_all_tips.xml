@@ -17,7 +17,8 @@
      android:layout_marginTop="100dp"
         android:text="ارشادات التوحد"
         android:textColor="@color/purple_200"
-        android:textSize="30sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,7 +33,8 @@
      android:layout_marginTop="30dp"
         android:text="ارشادات فرط الحركة"
         android:textColor="@color/purple_200"
-        android:textSize="30sp"
+        android:textSize="20sp"
+          android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_tips_autism"/>
@@ -47,7 +49,8 @@
      android:layout_marginTop="30dp"
         android:text="ارشادات صعوبات تعلم"
         android:textColor="@color/purple_200"
-        android:textSize="30sp"
+          android:textSize="20sp"
+          android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_tips_adhd"/>

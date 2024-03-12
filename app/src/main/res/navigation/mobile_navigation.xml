@@ -13,6 +13,12 @@
         <action
             android:id="@+id/action_nav_home_to_autismComponentFragment"
             app:destination="@id/autismComponentFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_ADHDComponentFragment"
+            app:destination="@id/ADHDComponentFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_learningFragment"
+            app:destination="@id/learningFragment" />
     </fragment>
 
     <fragment
@@ -61,4 +67,12 @@
         android:name="com.example.creativeband.ui.Tips.TipsLearningFragment"
         android:label="صعوبات التعلم"
         tools:layout="@layout/fragment_tips_learning" />
+    <fragment
+        android:id="@+id/ADHDComponentFragment"
+        android:name="com.example.creativeband.ui.therd.ADHDComponentFragment"
+        android:label="العاب فرط الحركة" />
+    <fragment
+        android:id="@+id/learningFragment"
+        android:name="com.example.creativeband.ui.therd.LearningFragment"
+        android:label="العاب صعوبات تعلم" />
 </navigation>

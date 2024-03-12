@@ -8,15 +8,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.creativeband.GameActivity
 import com.example.creativeband.R
+import com.example.creativeband.databinding.FragmentADHDComponentBinding
 import com.example.creativeband.databinding.FragmentAutismComponentBinding
 
-
-class AutismComponentFragment : Fragment() {
-    lateinit var binding: FragmentAutismComponentBinding
+class ADHDComponentFragment : Fragment() {
+    lateinit var binding: FragmentADHDComponentBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
 
     }
 
@@ -25,15 +24,7 @@ class AutismComponentFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-       binding = FragmentAutismComponentBinding.inflate(inflater,container,false)
-        return binding.root
-
-    }
-
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
+        binding = FragmentADHDComponentBinding.inflate(inflater,container,false)
 
         val ac = activity
 
@@ -45,12 +36,13 @@ class AutismComponentFragment : Fragment() {
 
         }
 
-         binding.card32.setOnClickListener {
+        binding.card32.setOnClickListener {
             GameActivity.link ="https://www.tinytap.com/activities/g5gjl/play/shadows"
             var intent = Intent(ac!!.baseContext, GameActivity::class.java)
             startActivity(intent)
 
         }
+
         binding.card33.setOnClickListener {
             GameActivity.link ="https://www.tinytap.com/activities/g5gly/play/color"
             var intent = Intent(ac!!.baseContext, GameActivity::class.java)
@@ -60,17 +52,10 @@ class AutismComponentFragment : Fragment() {
 
 
 
-
-
-
-
+        return binding.root
     }
-
 
     companion object {
 
     }
-
-//    "https://www.tinytap.com/activities/g5g9r/play/puzzle
-
 }
