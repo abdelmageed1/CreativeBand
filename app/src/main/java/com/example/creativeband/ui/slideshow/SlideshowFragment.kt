@@ -52,7 +52,7 @@ class SlideshowFragment : Fragment() {
             val intent = Intent(Intent.ACTION_VIEW)
 
             // Set the data (URL) for the intent
-            intent.data = Uri.parse("https://www.facebook.com/profile.php?id=61557065165897")
+            intent.data = Uri.parse("https://www.facebook.com/profile.php?id=61557270992276")
 
             // Start the activity with the intent
             startActivity(intent)

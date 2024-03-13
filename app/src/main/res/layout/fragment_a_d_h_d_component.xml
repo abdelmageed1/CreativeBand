@@ -159,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="20dp"
                     android:gravity="center"
-                    android:text="الوان"
+                    android:text="ملائمة الالوان"
                     android:textColor="@color/purple_200"
                     android:textSize="30sp"
                     android:textStyle="bold"
